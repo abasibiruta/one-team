@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakanda</title>
+</head>
+<body id="body">
+    <div class="headings">
+        <div >
+            <img class="logo"src="b21e2a82-fc09-4dda-af01-df205e83d344.png" alt="">
+        <a id="pages" href="index.html">Home</a>
+        <a id="pages" href="#">Menu</a>
+        <a id="pages" href="#">About</a>
+        <a id="pages" href="#">contact</a><br>
+        <input type="text" placeholder="search your favorate orders"><input type="submit" name="search" value="search" class="searchbutton"> <i>categories</i>
+        <select name="categories" id="categories">
+            <option value="link"><a href="#">Categories</a></option>
+            <option value="link"><a href="#">Breakfast</a></option>
+            <option value="link"><a href="lunch.html">Lunch</a></option>
+            <option value="link"><a href="#">Meal/Dinner</a></option>
+        </select>
+        </div>
+        
+        <div class="and">if you are new to wakanda restaurant start from <a class="register" href="register.html">here</a> <button class="lightbutton" onclick="colormode()">turnoff Lights</button> <button onclick="lightson()"> Turnon Lights</button></div>
+    </div>
+        <div class="right"> <h1>Welcome to Wakanda Restaurant</h1><a class="trends" href="#">trending drinks</a><a class="trends" href="#">trending meals</a><a class="trends" href="#">New fruits</a><p>You can check our menu</p></div>
+        <div class="hwrap"><div class="hmove">
+            <div class="hitem">Welcome to Wakanda restaurant <i> <span>order fresh meal, breakfast and drinks of any kind you can order or command the design you want</i></span> </div>
+            <div class="hitem"><i></i></div>
+
+            <div class="hitem">We provide drinks of any type of beverages including <span> juice, water and alcoholic drinks</span></div>
+            <div class="hitem">We also provide any type of meat products: <i>Beef</i></div>
+
+            <div class="hitem">Bakeries: <i> <span>cake and Cupcakes</span> . <span> Bread of any type </span>. <span>Samosa</span> . <span>Chapati </span>. <span> Mandazi</span></i></div>
+            <div class="hitem">Fruits: <i><span></span> Mangoes . pawpaw . apples . Banana . Oranges . </i></div>
+            <div class="hitem">If there is no any of the products that you need you can command the chief in charge</div>
+        </div></div>
+    <div id="orders">
+        <div class="meat"> <a href="drinks.html">
+            <h3>drinks</h3> <br>
+            <i id="describ">beverages and non-beverages
+            </i><img class="Banana" src="How to make a frozen pineapple daiquiri recipe.jpg" alt=""></a><br>
+            
+        </div>
+    
+        <div class="meat"><a href="#">
+            <h3>fruits</h3> <br>
+            <i id="describ">check the
+                available fruits
+            </i><img class="Banana" src="Affordable Flower Delivery_ Buy High-Quality Cheap Flowers Online _ AvasFlowers_Net.jpg" alt=""></a>
+        </div>
+        <div class="meat"><a href="">
+            <h3>Cooked meals</h3> <br>
+            <i id="describ">check the
+                available meals
+            </i><img class="Banana" src="Grilled Tandoori Chicken with Indian-Style Rice.jpg" alt=""></a>
+        </div>
+        <div class="meat"><a href="bakery.html">
+            <h3>Bakeries</h3> <br>
+            <i id="describ">check the
+                available bakeries
+            </i><img class="Banana" src="5 Oh-So-Corny Desserts.jpg" alt=""></a>
+            <div class="side">
+                
+                    
+            </div>
+        </div>
+        
+    </div>
+        <div class="servicemode">
+            <h2>Choose service model</h2><br>
+            <div class="images">
+                <a href="#"><img  class="delivery" src="Premium Vector _ Delivery logo template with gradient effect (1).jpg" alt=""></a>
+                <a href="#"><img  class="delivery"src="command.png" alt=""></a>
+                <a href="#"><img class="delivery" src="Money!.png" alt=""></a>
+            </div>
+            <div class="words"><b>Order</b><b id="command">Give a command</b><b id="command">pay direct</b></div>
+        </div>
+    <footer>
+        <p><img class="icon" src="Calibers and Pricing Krieger Barrels.png" alt=""> : wakanda_official</p>
+        <p> <img class="icon" src="Whatsapp Ios Icon Png Image With Transparent Background.png" alt=""> : +250-780-578-456</p>
+        <p><img class="icon" src="Gmail Logo PNG - Free Download.jpg" alt=""> : Wakandarestaurant@gmail.com</p>
+    </footer> 
+
+
+
+
+    
+    <script>
+         function myfunction(){
+    alert("Do you want to buy this?");
+} function colormode(){
+    document.getElementById("body").style.background = "black";
+    document.getElementById("orders").style.background = "black";
+} function colormode(){
+    document.getElementById("body").style.background = "white";
+    document.getElementById("orders").style.background = "whitesmoke";
+}
+    </script>
+    <style>
+        /* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: #eee;
+}@media only screen and (max-width: 500px) {
+  .hmove { animation-duration: 10s; }
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;color: blue;
+  text-align: center;font-size: 25px;
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 60s infinite; }
+.hmove:hover { animation-play-state: paused; }
+        body{
+            background-color: whitesmoke;
+        }h1{font-size: 60px;} span{color: green; margin-left: 1cm;}
+        h2{text-align: center;}
+        #command{margin-left: 3.5cm}
+        .delivery{height: 3cm; width: 5cm; margin-left: 1cm; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(12, 7, 7, 0.19);}
+        .delivery:hover{height: 3cm; width: 5cm; margin-left: 1cm; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(13, 4, 4, 0.2), 0 6px 20px 0 rgba(14, 5, 5, 0.19);}
+        h3{font-size: 30px; text-align: center;}
+        a{ color:rgb(24, 21, 21); text-decoration: none;}
+        .icon{height: 2cm; width: 2cm; border-radius: 10px;}
+        .Banana{height: 5cm; width: 6cm; margin-left: 20px;}
+        #describ{margin-left: 1cm;}
+        .words{padding-left: 4cm;}
+        b{margin-left: 3cm; }
+        .logo{height: 1cm; width: 1cm; border-radius: 10px;}
+        .headings{border: 1px solid black; background-color: rgb(222, 198, 17); padding: 10px; height: auto; display: flex;}
+        #pages{color: green; font-size: 25px; text-decoration: none; margin-left: 20px;}
+        #orders{border: 1px solid lightslategrey; display: flex; width: 35cm; height: 15cm; padding: 30px; background-color: azure; margin-top: 0.5%; border-radius: 10px; padding: 3cm;}
+        .meat{border: 1px solid grey; box-shadow: 10 20px 20px 0 rgba(0, 0, 0, 0.2), 10 20px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 30px; height: 9.5cm; width: 7cm; border-radius: 15px; background-color: grey;}
+        .meat:hover{border: 1px solid grey; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 30px; height: 10cm; width: 7cm; border-radius: 15px; background-color: grey;}
+        p{font-size: 30px;}
+        .serivecode{margin-bottom: 2cm;border: 1px solid grey;}
+        .right{border: 1px solid grey; height: 7cm; width: auto; background-image: url("./Black\ Panther\ Birthday\ Party\ Cupcakes.jpg"); background: cover; color: rgb(28, 23, 23); text-align: center;}
+        i{margin-left: 20px; text-align: center;}
+        select{width: 4cm; height: 0.8cm; border: 1px solid grey }
+        select:hover{width: 4cm; height: 0.8cm; background-color: lightskyblue; border-radius: 9px}
+        .register{color: blue}
+        input{height: 1cm; border-radius: 0 10px 10px 0;}
+        .images{margin-left: 4cm;}.lightbutton{margin-left: 30px; align-items: left;}
+        .trends{margin-left: 20px; text-decoration: italic; color: cadetblue;}
+        footer{border: 1px solid black; height: auto; width: 100%; padding-left: 40px; background-color: rgb(24, 21, 21); color:aliceblue; margin-top: 3cm;}
+    
+    </style>
+</body>
+</html>
